@@ -158,7 +158,7 @@ msgstr ""
 #: code:addons/mail_bot/static/src/js/systray_messaging_menu.js:0
 #, python-format
 msgid ""
-"Odoo will not have the permission to send native notifications on this "
+"ERP will not have the permission to send native notifications on this "
 "device."
 msgstr ""
 

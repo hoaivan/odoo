@@ -5,7 +5,7 @@
     'name': 'OdooBot',
     'version': '1.0',
     'category': 'Discuss',
-    'summary': 'Add OdooBot in discussions',
+    'summary': 'Add Bot in discussions',
     'description': "",
     'website': 'https://www.odoo.com/page/discuss',
     'depends': ['mail'],

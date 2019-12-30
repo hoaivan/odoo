@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'OdooBot for livechat',
+    'name': 'Bot for livechat',
     'version': '1.0',
     'category': 'Discuss',
     'summary': 'Add livechat support for OdooBot',
