@@ -1,2 +1,2 @@
 source venv/bin/activate
-python odoo-bin --config odoo.conf
+python odoo-bin --config odoo.conf --dev all

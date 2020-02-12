@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+
+  db:
+    image: postgres:12
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
+      - .postgresql.conf:/etc/postgresql/postgresql.conf
+    ports:
+      - 5432:5432
+    network_mode: host
+
+#  adminer:
+#    image: adminer
+#    ports:
+#      - 8080:8080gog
+
+volumes:
+  odoo-db-data:
+    driver: local
+    driver_opts:
+#      o: bind
+#      type: none
+      device: ./data
