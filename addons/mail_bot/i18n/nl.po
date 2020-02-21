@@ -82,7 +82,7 @@ msgstr "HTTP routing"
 #: code:addons/mail_bot/models/mail_channel.py:0
 #, python-format
 msgid ""
-"Hello,<br/>Odoo's chat helps employees collaborate efficiently. I'm here to "
+"Hello,<br/>Chat helps employees collaborate efficiently. I'm here to "
 "help you discover its features.<br/><b>Try to send me an emoji :)</b>"
 msgstr ""
 "Hallo, <br/>Odoo's chat helpt medewerkers efficiënt samen te werken. Ik ben "
