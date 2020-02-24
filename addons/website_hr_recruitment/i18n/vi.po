@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* website_hr_recruitment
-# 
+#
 # Translators:
 # Martin Trigaux, 2019
 # fanha99 <fanha99@hotmail.com>, 2019
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2019
 # Duy BQ <duybq86@gmail.com>, 2019
 # Dao Nguyen <trucdao.uel@gmail.com>, 2019
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -357,7 +357,7 @@ msgstr "Tuyển dụng"
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.index
 msgid "Join us and help disrupt the enterprise market!"
-msgstr "Tham gia cùng chúng tôi và cùng khuấy đảo thị trường kinh doanh!"
+msgstr "Tham gia cùng chúng tôi và cùng khuấy đảo thị trường kinh doanh!"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.index
