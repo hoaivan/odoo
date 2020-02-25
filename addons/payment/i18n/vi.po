@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* payment
-# 
+#
 # Translators:
 # Thang Duong Bao <nothingctrl@gmail.com>, 2019
 # Martin Trigaux, 2019
@@ -11,7 +11,7 @@
 # Dao Nguyen <trucdao.uel@gmail.com>, 2019
 # Chinh Chinh <trinhttp@trobz.com>, 2019
 # Duy BQ <duybq86@gmail.com>, 2019
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
@@ -1764,8 +1764,8 @@ msgid ""
 "The transaction %s with %s for %s has been confirmed. The related payment is"
 " posted: %s"
 msgstr ""
-"Giao dịch %s với %s cho %s đã được xác nhận. Thanh toán liên quan là: %s đã "
-"vào sổ: %s"
+"Giao dịch %s với %s cho %s đã được xác nhận. Thanh toán liên quan đã vào sổ"
+" là: %s"
 
 #. module: payment
 #: code:addons/payment/models/payment_acquirer.py:0
