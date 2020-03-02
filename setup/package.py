@@ -164,7 +164,19 @@ def gen_rpm_repo(args, file_name):
 def _prepare_build_dir(args, win32=False):
     """Copy files to the build directory"""
     logging.info('Preparing build dir "%s"', args.build_dir)
-    cmd = ['rsync', '-a', '--delete', '--exclude', '.git', '--exclude', '*.pyc', '--exclude', '*.pyo']
+    cmd = ['rsync', '-a', '--delete',
+           '--exclude', '.git',
+           '--exclude', '.github',
+           '--exclude', '.idea',
+           '--exclude', '.tx',
+           '--exclude', '.vscode',
+           # '--exclude', 'data',
+           '--exclude', 'dockerize',
+           '--exclude', 'venv',
+           # '--exclude', 'env',
+           '--exclude', 'commercials_addons',
+           '--exclude', 'school_addons',
+           ]
     if win32 is False:
         cmd += ['--exclude', 'setup/win32']
 

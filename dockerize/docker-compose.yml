@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+
+  web:
+    image: erp:13.0
+    ports:
+      - 8069
+      - 8072
+    volumes:
+      - ./data/web/:/var/lib/odoo/
+      - ./odoo.conf:/etc/odoo/odoo.conf
+
+## PROD
+#      - ./school_addons/:/mnt/extra-addons
+#      - ./commercials_addons:/mnt/commercials-addons/
+# DEV
+      - ../../school_addons/:/mnt/extra-addons
+      - ../../commercials_addons:/mnt/commercials-addons/
+
+    environment:
+      - VIRTUAL_HOST=test.vn,a.test.vn
+      - VIRTUAL_PORT=8069
+      - LETSENCRYPT_HOST=test.vn,a.test.vn
+      - LETSENCRYPT_EMAIL=info@schoolerp.vn
+      - CERT_NAME=shared
+      - HTTPS_METHOD=redirect
+
+networks:
+  default:
+    external:
+      name: webproxy
