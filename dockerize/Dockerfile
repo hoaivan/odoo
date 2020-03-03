@@ -75,6 +75,9 @@ RUN apt-get update \
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
 COPY ./odoo.conf /etc/odoo/
+COPY ./requirements-extra.txt ./requirements-extra.txt
+
+RUN pip3 install -r requirements-extra.txt
 
 # Set permissions and Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
 # chown before mount volume otherwise loosing chown permission
