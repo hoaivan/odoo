@@ -561,7 +561,7 @@ var Message =  AbstractMessage.extend(Mixins.EventDispatcherMixin, ServicesMixin
      */
     _getAuthorName: function () {
         if (this._isOdoobotAuthor()) {
-            return "OdooBot";
+            return "System";
         }
         return this._super.apply(this, arguments);
     },
