@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-#
+# 
 # Translators:
 # Martin Trigaux, 2019
 # liAnGjiA <liangjia@qq.com>, 2019
@@ -11,7 +11,7 @@
 # inspur qiuguodong <qiuguodong@inspur.com>, 2019
 # John An <johnxan@163.com>, 2019
 # Jeffery CHEN Fan <jeffery9@gmail.com>, 2020
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -233,8 +233,8 @@ msgstr "请重新输入搜索内容···<br/>无法搜索到相关内容"
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@system\" and select me."
-msgstr "请重新输入搜索内容, <b>ping him</b>. 请输入 \"@system\" 选择艾特我."
+"Write \"@odoobot\" and select me."
+msgstr "请重新输入搜索内容, <b>ping him</b>. 请输入 \"@odoobot\" 选择艾特我."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -266,8 +266,8 @@ msgstr "用户"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @system</b> in a sentence."
-msgstr "哇,就是兄dei你了！用@nameoftheuser来吸引别人的注意力。尝试用句子中的@system 来关注我。"
+"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+msgstr "哇,就是兄dei你了！用@nameoftheuser来吸引别人的注意力。尝试用句子中的@OdooBot 来关注我。"
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

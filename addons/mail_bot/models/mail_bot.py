@@ -45,7 +45,7 @@ class MailBot(models.AbstractModel):
                 return _("Not a cute dog, but you get it 😊<br/>To access special features, <b>start your sentence with '/'</b>. Try to get help.")
             elif odoobot_state == 'onboarding_command' and command == 'help':
                 self.env.user.odoobot_state = "onboarding_ping"
-                return _("Wow you are a natural!<br/>Ping someone to grab its attention with @nameoftheuser. <b>Try to ping me using @system</b> in a sentence.")
+                return _("Wow you are a natural!<br/>Ping someone to grab its attention with @nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence.")
             elif odoobot_state == 'onboarding_ping' and self._is_bot_pinged(values):
                 self.env.user.odoobot_state = "idle"
                 return _("Yep, I am here! 🎉 <br/>You finished the tour, you can <b>close this chat window</b>. Enjoy discovering Odoo.")
@@ -68,7 +68,7 @@ class MailBot(models.AbstractModel):
                 elif odoobot_state == 'onboarding_command':
                     return _("Not sure wat you are doing. Please press / and wait for the propositions. Select \"help\" and press enter")
                 elif odoobot_state == 'onboarding_ping':
-                    return _("Sorry, I am not listening. To get someone's attention, <b>ping him</b>. Write \"@system\" and select me.")
+                    return _("Sorry, I am not listening. To get someone's attention, <b>ping him</b>. Write \"@odoobot\" and select me.")
                 return random.choice([
                     _("I'm not smart enough to answer your question.<br/>To follow my guide, ask") + ": <b>"+_('start the tour') + "</b>",
                     _("Hmmm..."),

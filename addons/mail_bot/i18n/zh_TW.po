@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-#
+# 
 # Translators:
 # Martin Trigaux, 2019
 # Andy Cheng <andy.cheng@richsoda.com>, 2019
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2019
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -230,8 +230,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@system\" and select me."
-msgstr "抱歉, 我沒聽清你的問題. 可以給倫家多一點提示嘛~比如您可以這樣說, <b>呼叫</b>. 請輸入 \"@system\" 選擇我."
+"Write \"@odoobot\" and select me."
+msgstr "抱歉, 我沒聽清你的問題. 可以給倫家多一點提示嘛~比如您可以這樣說, <b>呼叫</b>. 請輸入 \"@odoobot\" 選擇我."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -263,8 +263,8 @@ msgstr "使用者"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @system</b> in a sentence."
-msgstr "就是您了!<br/>使用@nameoftheuser來讓聯絡人可以醒目看到訊息. <b>試著用@system</b> 來呼叫我!"
+"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+msgstr "就是您了!<br/>使用@nameoftheuser來讓聯絡人可以醒目看到訊息. <b>試著用@OdooBot</b> 來呼叫我!"
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
