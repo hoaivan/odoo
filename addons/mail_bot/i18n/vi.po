@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-# 
+#
 # Translators:
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2019
 # Duy BQ <duybq86@gmail.com>, 2019
 # Minh Nguyen <ndminh210994@gmail.com>, 2019
 # Chinh Chinh <trinhttp@trobz.com>, 2019
 # Dao Nguyen <trucdao.uel@gmail.com>, 2019
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -250,10 +250,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@odoobot\" and select me."
+"Write \"@system\" and select me."
 msgstr ""
 "Xin lỗi, tôi không nghe. Để thu hút sự chú ý của ai đó, hãy ping anh ta. "
-"Viết \"@odoobot\" và chọn tôi."
+"Viết \"@system\" và chọn tôi."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -287,10 +287,10 @@ msgstr "Người dùng"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+"@nameoftheuser. <b>Try to ping me using @system</b> in a sentence."
 msgstr ""
 "Ồ, bạn thật tự nhiên! <br/> Ping ai đó để thu hút sự chú ý của nó với @tên "
-"của người dùng. <b> Cố gắng ping tôi bằng cách sử dụng @OdooBot </b> trong "
+"của người dùng. <b> Cố gắng ping tôi bằng cách sử dụng @system </b> trong "
 "một câu."
 
 #. module: mail_bot

@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-# 
+#
 # Translators:
 # Martin Trigaux, 2019
 # Link Up링크업 <linkup.way@gmail.com>, 2019
 # Linkup <link-up@naver.com>, 2019
 # Seongseok Shin <shinss61@hotmail.com>, 2019
 # JH CHOI <hwangtog@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -236,9 +236,9 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@odoobot\" and select me."
+"Write \"@system\" and select me."
 msgstr ""
-"미안해요, 안 듣고 있어요. 다른 사람의 주의를 끌려면, <b>핑을 쏘세요</b>. \"@odoobot\"이라고 쓰고 저를 선택하세요."
+"미안해요, 안 듣고 있어요. 다른 사람의 주의를 끌려면, <b>핑을 쏘세요</b>. \"@system\"이라고 쓰고 저를 선택하세요."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -270,9 +270,9 @@ msgstr "사용자"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+"@nameoftheuser. <b>Try to ping me using @system</b> in a sentence."
 msgstr ""
-"와우 당신 정말 타고났군요! <br/>누군가가 @nameoftheuser로 관심을 끌게 했나봐요. 문장에 <b>@OdooBot을 써서 날"
+"와우 당신 정말 타고났군요! <br/>누군가가 @nameoftheuser로 관심을 끌게 했나봐요. 문장에 <b>@system을 써서 날"
 " 꼬시려 하네요</b>."
 
 #. module: mail_bot

@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-# 
+#
 # Translators:
 # Martin Trigaux, 2019
 # Vasiliy Korobatov <korobatov@gmail.com>, 2019
 # Ivan Yelizariev <yelizariev@it-projects.info>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -250,10 +250,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@odoobot\" and select me."
+"Write \"@system\" and select me."
 msgstr ""
 "К сожалению, я не слушаю. Чтобы привлечь чье-то внимание, <b>свисните "
-"ему.</b> Напишите `@odoobot` и выберите меня."
+"ему.</b> Напишите `@system` и выберите меня."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -287,10 +287,10 @@ msgstr "Пользователи"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+"@nameoftheuser. <b>Try to ping me using @system</b> in a sentence."
 msgstr ""
 "Вау, вы естественные! <br/> Привлеките чье-то внимание с @nameoftheuser. "
-"<b>Попробуйте позвать меня, используя @OdooBot</b> в предложении."
+"<b>Попробуйте позвать меня, используя @system</b> в предложении."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

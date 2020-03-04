@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-# 
+#
 # Translators:
 # Mustafa Rawi <mustafa@cubexco.com>, 2019
 # Akram Alfusayal <akram_ma@hotmail.com>, 2019
 # amrnegm <amrnegm.01@gmail.com>, 2019
 # Osama Ahmaro <osamaahmaro@gmail.com>, 2019
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -239,9 +239,9 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@odoobot\" and select me."
+"Write \"@system\" and select me."
 msgstr ""
-"آسف، أنا لا أصغي لك. للفت انتباه أحدهم،<b>ناديه</b>. اكتب \"@odoobot\" "
+"آسف، أنا لا أصغي لك. للفت انتباه أحدهم،<b>ناديه</b>. اكتب \"@system\" "
 "واخترني."
 
 #. module: mail_bot
@@ -274,10 +274,10 @@ msgstr "المستخدمون"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+"@nameoftheuser. <b>Try to ping me using @system</b> in a sentence."
 msgstr ""
 "واو، أنت موهوب بالفطرة!<br/>نادي على أحدهم للفت انتباهه من خلال @اسم "
-"المستخدم. <b>جرب مناداتي باستخدام @OdooBot</b> في جملة."
+"المستخدم. <b>جرب مناداتي باستخدام @system</b> في جملة."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

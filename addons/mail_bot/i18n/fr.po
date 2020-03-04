@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-# 
+#
 # Translators:
 # Cécile Collart <cco@odoo.com>, 2019
 # Eloïse Stilmant <est@odoo.com>, 2019
 # William Olhasque <william.olhasque@scopea.fr>, 2019
 # Nicolas Roussey <nro@odoo.com>, 2019
 # Martin Trigaux, 2019
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
@@ -252,10 +252,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@odoobot\" and select me."
+"Write \"@system\" and select me."
 msgstr ""
 "Désolé, je n'écoutais pas. Pour attirer l'attention de quelqu'un, <b"
-">mentionnez-le</b>. Ecrivez \"@odoobot\" et sélectionnez moi. "
+">mentionnez-le</b>. Ecrivez \"@system\" et sélectionnez moi. "
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -289,11 +289,11 @@ msgstr "Utilisateurs"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+"@nameoftheuser. <b>Try to ping me using @system</b> in a sentence."
 msgstr ""
 "Wow vous vous en sortez bien! <br/>Mentionnez quelqu'un pour attirer son "
 "attention avec @nomdutilisateur. <b>Essayez de me mentionner en utilisant "
-"@OdooBot</b> dans une phrase."
+"@system</b> dans une phrase."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
