@@ -21,8 +21,8 @@ services:
     environment:
       - VIRTUAL_HOST=test.vn,a.test.vn
       - VIRTUAL_PORT=8069
-      - LETSENCRYPT_HOST=test.vn,a.test.vn
-      - LETSENCRYPT_EMAIL=info@schoolerp.vn
+ #     - LETSENCRYPT_HOST=test.vn,a.test.vn
+ #     - LETSENCRYPT_EMAIL=info@schoolerp.vn
       - CERT_NAME=shared
       - HTTPS_METHOD=redirect
 
