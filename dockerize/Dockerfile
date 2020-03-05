@@ -56,7 +56,7 @@ ENV ODOO_VERSION 13.0
 ARG ODOO_RELEASE=20200121
 ARG ODOO_SHA=770d71cfafb9a8f8419b88f8033b964d5742ad57
 
-COPY ./odoo_13.0.20200229_all.deb odoo_13.0_all.deb
+COPY ./odoo_13.0.20200305_all.deb odoo_13.0_all.deb
 
 # User our own file
 RUN set -x; dpkg --force-depends -i odoo_13.0_all.deb
@@ -75,9 +75,10 @@ RUN apt-get update \
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
 COPY ./odoo.conf /etc/odoo/
-COPY ./requirements-extra.txt ./requirements-extra.txt
 
-RUN pip3 install -r requirements-extra.txt
+# MUST reinstall because apt may install wrong package
+COPY ./requirements.txt ./requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Set permissions and Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
 # chown before mount volume otherwise loosing chown permission

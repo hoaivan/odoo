@@ -1,4 +1,0 @@
-# Better debug msg for template
-jingtrang
-phonenumbers
-facebook-sdk

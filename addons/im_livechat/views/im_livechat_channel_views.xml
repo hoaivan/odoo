@@ -116,7 +116,7 @@
                                     </kanban>
                                 </field>
                                 <p class="text-muted" style="padding-left: 8px">
-                                    Operators that do not show any activity In Odoo for more than 30 minutes will be considered as disconnected.
+                                    Operators that do not show any activity for more than 30 minutes will be considered as disconnected.
                                 </p>
                             </group>
                         </page>
