@@ -111,7 +111,7 @@ var CrashManager = AbstractService.extend({
                     delete window.onOriginError;
                 } else {
                     self.show_error({
-                        type: _t("Odoo Client Error"),
+                        type: _t("Client Error"),
                         message: _t("Unknown CORS error"),
                         data: {debug: _t("An unknown CORS error occured. The error probably originates from a JavaScript file served from a different origin. (Opening your browser console might give you a hint on the error.)")},
                     });
@@ -123,7 +123,7 @@ var CrashManager = AbstractService.extend({
                 }
                 var traceback = error ? error.stack : '';
                 self.show_error({
-                    type: _t("Odoo Client Error"),
+                    type: _t("Client Error"),
                     message: message,
                     data: {debug: file + ':' + line + "\n" + _t('Traceback:') + "\n" + traceback},
                 });
@@ -136,7 +136,7 @@ var CrashManager = AbstractService.extend({
             if (ev.reason && ev.reason instanceof Error) {
                 var traceback = ev.reason.stack;
                 self.show_error({
-                    type: _t("Odoo Client Error"),
+                    type: _t("Client Error"),
                     message: '',
                     data: {debug: _t('Traceback:') + "\n" + traceback},
                 });
@@ -302,7 +302,7 @@ var CrashManager = AbstractService.extend({
     },
     show_message: function(exception) {
         return this.show_error({
-            type: _t("Odoo Client Error"),
+            type: _t("Client Error"),
             message: exception,
             data: {debug: ""}
         });
@@ -359,7 +359,7 @@ var RedirectWarningHandler = Widget.extend(ExceptionHandler, {
         var error = this.error;
 
         new WarningDialog(this, {
-            title: _.str.capitalize(error.type) || _t("Odoo Warning"),
+            title: _.str.capitalize(error.type) || _t("Warning"),
             buttons: [
                 {text: error.data.arguments[2], classes : "btn-primary", click: function() {
                     $.bbq.pushState({
@@ -382,7 +382,7 @@ core.crash_registry.add('odoo.exceptions.RedirectWarning', RedirectWarningHandle
 function session_expired(cm) {
     return {
         display: function () {
-            cm.show_warning({type: _t("Odoo Session Expired"), message: _t("Your Odoo session expired. Please refresh the current web page.")});
+            cm.show_warning({type: _t("Session Expired"), message: _t("Your session expired. Please refresh the current web page.")});
         }
     };
 }
