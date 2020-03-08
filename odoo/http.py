@@ -628,7 +628,7 @@ class JsonRequest(WebRequest):
                     _logger.exception("Exception during JSON request handling.")
             error = {
                 'code': 200,
-                'message': "Odoo Server Error",
+                'message': "Server Error",
                 'data': serialize_exception(exception),
             }
             if isinstance(exception, werkzeug.exceptions.NotFound):
@@ -637,10 +637,10 @@ class JsonRequest(WebRequest):
                 error['message'] = "404: Not Found"
             if isinstance(exception, AuthenticationError):
                 error['code'] = 100
-                error['message'] = "Odoo Session Invalid"
+                error['message'] = "Session Invalid"
             if isinstance(exception, SessionExpiredException):
                 error['code'] = 100
-                error['message'] = "Odoo Session Expired"
+                error['message'] = "Session Expired"
             return self._json_response(error=error)
 
     def dispatch(self):
@@ -683,7 +683,7 @@ class JsonRequest(WebRequest):
 def serialize_exception(e):
     tmp = {
         "name": type(e).__module__ + "." + type(e).__name__ if type(e).__module__ else type(e).__name__,
-        "debug": traceback.format_exc(),
+        #"debug": traceback.format_exc(),
         "message": ustr(e),
         "arguments": e.args,
         "exception_type": "internal_error",
