@@ -6,8 +6,8 @@
 2.  Rename file inside Dockerfile, build docker:
     docker build -t erp:13.0 .
 
-2.  Save image
+3.  Save image
     docker save erp:13.0 > erp_13.0.tar
 
-3.  Upload to remote server then
+4.  Upload to remote server then
     docker load < erp_13.0.tar
