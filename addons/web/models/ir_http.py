@@ -42,7 +42,7 @@ class Http(models.AbstractModel):
             "partner_id": user.partner_id.id if request.session.uid and user.partner_id else None,
             "web.base.url": self.env['ir.config_parameter'].sudo().get_param('web.base.url', default=''),
         }
-        if self.env.user.has_group('base.group_user'):
+        if self.env.user.has_group('base.group_user') or self.env.user.has_group('base.group_portal'):
             # the following is only useful in the context of a webclient bootstrapping
             # but is still included in some other calls (e.g. '/web/session/authenticate')
             # to avoid access errors and unnecessary information, it is only included for users
@@ -65,6 +65,7 @@ class Http(models.AbstractModel):
                 "display_switch_company_menu": user.has_group('base.group_multi_company') and len(user.company_ids) > 1,
                 "cache_hashes": cache_hashes,
             })
+
         return session_info
 
     @api.model
