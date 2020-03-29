@@ -87,6 +87,18 @@
     </t>
 </ul>
 <div t-if="signature" t-raw="signature" style="font-size: 13px;"/>
+<p style="color: #555555; margin-top:32px;">
+    Sent
+    <span t-if="company.name">
+    by
+    <a t-if="website_url" t-att-href="website_url" style="text-decoration:none; color: #875A7B;">
+        <span t-esc="company.name"/>
+    </a>
+    <span t-if="not website_url" t-esc="company.name"/>
+    </span>
+    using
+    <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=email" style="text-decoration:none; color: #875A7B;">Odoo</a>.
+</p>
 </div>
         </template>
 
@@ -136,6 +148,11 @@
                     </t>
                 </td></tr>
             </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding: 8px; font-size:11px;">
+            Powered by <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=email">Odoo</a>.
         </td>
     </tr>
 </tbody>
@@ -191,6 +208,10 @@
     </tr>
 </tbody>
 </table>
+</td></tr>
+<!-- POWERED BY -->
+<tr><td align="center" style="min-width: 590px;">
+        Powered by <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=email" style="color: #875A7B;">Odoo</a>
 </td></tr>
 </table>
         </template>
@@ -272,6 +293,10 @@
     </tr>
 </tbody>
 </table>
+</td></tr>
+<!-- POWERED BY -->
+<tr><td align="center" style="min-width: 590px; padding: 8px; font-size:11px;">
+    Powered by <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=email" style="color: #875A7B;">Odoo</a>
 </td></tr>
 </table>
         </template>
