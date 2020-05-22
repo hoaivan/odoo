@@ -3,7 +3,7 @@
     package_deb.sh
     then copy odoo-public/deb/odoo_13.0.20200308_all.deb to folder dockerize
 
-2.  Rename file inside Dockerfile, build docker:
+2.  Rename file odoo_13.0.20200308_all.deb inside Dockerfile, build docker:
     docker build -t erp:13.0 .
 
 3.  Save image

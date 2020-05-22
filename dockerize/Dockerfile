@@ -56,7 +56,7 @@ ENV ODOO_VERSION 13.0
 ARG ODOO_RELEASE=20200121
 ARG ODOO_SHA=770d71cfafb9a8f8419b88f8033b964d5742ad57
 
-COPY ./odoo_13.0.20200313_all.deb odoo_13.0_all.deb
+COPY ./odoo_13.0.20200404_all.deb odoo_13.0_all.deb
 
 # User our own file
 RUN set -x; dpkg --force-depends -i odoo_13.0_all.deb

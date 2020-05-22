@@ -4,7 +4,7 @@ services:
 
   web:
     image: erp:13.0
-    restart: always
+#    restart: always
     ports:
       - 8069
       - 8072
