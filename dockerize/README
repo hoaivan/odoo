@@ -11,3 +11,6 @@
 
 4.  Upload to remote server then
     docker load < erp_13.0.tar
+
+5.  Install fresh odoo inside docker:
+    odoo -c /etc/odoo/odoo.conf -i base --max-cron-threads=0 --stop-after-init --no-xmlrpc --no-http
